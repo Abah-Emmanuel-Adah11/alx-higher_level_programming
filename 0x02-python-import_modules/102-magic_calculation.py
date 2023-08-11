@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""A program that match bytecode provided by Holberton School."""
 from magic_calculation_102 import add, sub
 
 
