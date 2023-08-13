@@ -7,6 +7,6 @@ def divisible_by_2(my_list=[]):
         if my_list[i] % 2 == 0:
             multiples_2.append(True)
         else:
-            multiples_2.append(false)
+            multiples_2.append(False)
 
         return (multiples_2)
