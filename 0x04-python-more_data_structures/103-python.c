@@ -5,7 +5,7 @@
  * print_python_bytes - A function that Prints bytes information
  *
  * @p: A Python Object
- * Return: no return
+ * Return: void
  */
 void print_python_bytes(PyObject *p)
 {
