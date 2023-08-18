@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-"""A function that complete the square value of all
-integer of a matrix"""
 
 def square_matrix_simple(matrix=[]):
     new_matrix = matrix.copy()
