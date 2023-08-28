@@ -9,6 +9,6 @@ def magic_calculation(a, b):
             else:
                 outcome += a ** b / i
             except:
-                result = b + a
+                outcome = b + a
                 break
             return (outcome)
