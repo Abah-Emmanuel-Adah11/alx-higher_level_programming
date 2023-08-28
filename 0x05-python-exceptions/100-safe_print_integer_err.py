@@ -5,8 +5,8 @@ import sys
 def safe_print_integer_err(value):
     """A function that prints an integer with "{:d}".format().
 
-    When a VeiwError message is encountered, a corresponding message
-    is printed to standard error.
+    If a ValueError message is caugth, a corresponding
+    message is printed to standard error.
 
     Args:
         value (int): The integer to be printed.
