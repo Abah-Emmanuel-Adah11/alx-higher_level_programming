@@ -15,8 +15,9 @@ def safe_function(fct, *args):
         Else - the result of the call to fct.
     """
     try:
-        result = fct(*args)
-        return (result)
-    except:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
-        return (None)
+        res = fct(*args)
+    except BaseException as e:
+        res = None
+        print("Exception: {}".format(e), file=sys.stderr)
+    finally:
+        return res
