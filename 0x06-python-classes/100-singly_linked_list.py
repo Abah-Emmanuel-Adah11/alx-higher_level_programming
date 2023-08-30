@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Defining classes for a singly linked list."""
+"""Defining classes for a singly-linked list."""
+
 
 class Node:
-    """Representing a nde in a singly-linked list."""
+    """Representing a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
         """Initializing a new Node.
@@ -33,7 +34,7 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         if not isinstance(value, Node) and value is not None:
-            raise TypeError("next_node must be a Node object"
+            raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
@@ -41,11 +42,11 @@ class SinglyLinkedList:
     """Representing a singly-linked list."""
 
     def __init__(self):
-        """Initializing a new SinglyLinkedList."""
+        """Initalizing a new SinglyLinkedList."""
         self.__head = None
 
     def sorted_insert(self, value):
-        """Insert a new Node to the SinglyLinkedList
+        """Inserting a new Node to the SinglyLinkedList.
 
         The node is inserted into the list at the correct
         ordered numerical position.
@@ -69,7 +70,7 @@ class SinglyLinkedList:
             tmp.next_node = new
 
     def __str__(self):
-        """Defining the print() representation of a SinglyLinkedList."""
+        """Define the print() representation of a SinglyLinkedList."""
         values = []
         tmp = self.__head
         while tmp is not None:
