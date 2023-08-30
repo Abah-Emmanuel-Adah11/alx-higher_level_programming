@@ -18,7 +18,7 @@ class Sqaure:
     @property
     def size(self):
         """Get/set the current size of the square."""
-        return (self._size)
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -37,6 +37,7 @@ class Sqaure:
     def position(self, value):
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
+                not all(isintance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
