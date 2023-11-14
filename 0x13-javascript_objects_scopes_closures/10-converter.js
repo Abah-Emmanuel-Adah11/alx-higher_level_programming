@@ -1,17 +1,13 @@
 #!/usr/bin/node
 exports.converter = function (base) {
-
-  /* return a new function, this function take
+  /* returning a new function, this function take
 the argument sended and convert to base */
-
   return function (num) {
     /* take a number, use toString to convert
 base */
-
     return num.toString(base);
   };
 };
-
 /*
 let myConverter = converter(10);
 
