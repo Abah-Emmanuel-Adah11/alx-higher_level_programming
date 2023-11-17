@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ A script that return filter states """
-
 if __name__ == '__main__':
     import MySQLdb
     from sys import argv
@@ -10,11 +9,11 @@ if __name__ == '__main__':
                         passwd=argv[2],
                         db=argv[3])
     cur = db.cusor()
-    cur.execute(""" SELECT 8 FROM states WHERE
+    cur.execute(""" SELECT * FROM states WHERE
                 name LIKE BINARY "N%" ORDER BY id""")
     rows = cur.fetchall()
     for row in rows:
-        print (row)
+        print(row)
     cur.close()
     db.close()
 
