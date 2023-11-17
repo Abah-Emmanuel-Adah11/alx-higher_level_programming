@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A script that return filter states """
+""" A script the return cities and states """
 if __name__ == '__main__':
     import MySQLdb
     from sys import argv
@@ -9,9 +9,8 @@ if __name__ == '__main__':
                          passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("""SELECT * FROM states
-                WHERE name LIKE BINARY '{}'
-                ORDER BY id""".format(argv[4]))
+    cur.execute("""SELECT c.id, c.name, s.name FROM cities c
+                JOIN states s ON c.state_id = s.id""")
     rows = cur.fetchall()
     for row in rows:
         print(row)
