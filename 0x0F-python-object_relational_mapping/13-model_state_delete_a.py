@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-""" Start link class to table in database
+""" Starting link class to table in database
 """
 import sys
 from model_state import Base, State
@@ -16,7 +15,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).filter(State.name.like('%a%')).all()
+    states = session.query(State).filter(State.name.like('%a%'))
     for state in states:
-        print("{}: {}".format(state.id, state.name))
+        session.delete(state)
+    session.commit()
     session.close()
