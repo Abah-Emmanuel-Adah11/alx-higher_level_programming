@@ -30,5 +30,5 @@
 ### [9. My Github!](./10-my_github.py)
 * Write a Python script that takes your Github credentials (username and password) and uses the Github API to display your id.
 
-### [10. Time for an interview!] (./100-github_commits.py)
+### [10. Time for an interview!](./100-github_commits.py)
 * Write a Python script that takes 2 arguments in order to solve this challenge.
