@@ -27,8 +27,8 @@
 ### [8. Search API](./8-json_api.py)
 * Write a Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
 
-### [9. Star Wars API #0](./9-starwars.py)
-* Write a Python script that takes in a string and sends a search request to the Star Wars API
+### [9. My Github!](./10-my_github.py)
+* Write a Python script that takes your Github credentials (username and password) and uses the Github API to display your id.
 
-### [10. My Github!](./10-my_github.py)
-* Write a Python script that takes your Github credentials (username and password) and uses the Github API to display your id
+### [10. Time for an interview!] (./100-github_commits.py)
+* Write a Python script that takes 2 arguments in order to solve this challenge.
